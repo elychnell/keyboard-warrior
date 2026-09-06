@@ -1,0 +1,31 @@
+{
+  "name": "keyboardwarrior",
+  "version": "1.0.0",
+  "description": "The original version of **Keyboard Warrior**, a browser-based typing game developed using PHP, MySQL, JavaScript and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elychnell/keyboard-warrior.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elychnell/keyboard-warrior/issues"
+  },
+  "homepage": "https://github.com/elychnell/keyboard-warrior#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "@types/pg": "^8.23.1",
+    "@types/ws": "^8.18.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "ws": "^8.21.3"
+  }
+}
