@@ -1,0 +1,86 @@
+body {background-color: black;}
+ul {list-style-type:none;} 
+
+.loginDiv {
+position: absolute;
+top: 45px;
+left: 135px;
+color: #008F11;
+}
+
+.resTitle, .regUsersTitle, .premUsersTitle {
+color: forestgreen;
+position: absolute;
+z-index: 999;
+top: 2%;    
+}
+
+.resTitle {left: 25%;}
+.regUsersTitle {left: 76%;}
+.premUsersTitle {left: 51%;}
+
+.forms {
+position: relative;
+color: forestgreen;
+display: block;
+left: 100px;
+top: 5%;
+width: 200px;
+}
+
+.RegisterForm, .searchFormUser, .searchFormEmail {
+border: 1px green solid;
+border-radius: 4px;    
+padding: 5px;
+margin-bottom: 10px;
+}
+
+.UserList, .premUserList {
+color:forestgreen;
+position: absolute;
+z-index: 999;
+top: 8%;
+padding: 1px 5px 1px 5px;
+border: 1px green solid;
+border-radius: 4px;
+width: 440px;
+}
+
+.UserList {left: 75%;}
+.premUserList {left: 50%;}
+
+.premUserList h3,.UserList h3 {
+text-align: center;  
+}
+.premUserList li,.UserList li {
+position: relative;
+right: 20px;
+padding: 1px 5px 1px 5px;
+border: 1px green solid;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.results {
+color:forestgreen;
+position: absolute;
+z-index: 999;
+left: 25%;
+top: 8%;
+padding: 10px;
+border: 1px green solid;
+border-radius: 4px;
+}
+
+.results .deleteForm {
+position: relative;
+display: inline-block;
+left: 240px;
+top: 14px;
+}
+
+.results .premForm {
+position: relative;
+display: inline-block;
+right: 55px;
+top: 14px;
+}

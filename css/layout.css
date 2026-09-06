@@ -1,0 +1,203 @@
+
+:root {
+  --main-radius: 5px; 
+  --main-padding: 5px;
+}
+
+body {margin: 3px;}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.205fr 1fr 728px;
+    grid-template-rows: 90px 40px 1fr 1fr 261px 314px 20px;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item11"
+    "item4 item7 item7"
+    "item6 item7 item7"
+    "item8 item7 item7"
+    "item8 item9 item9"
+    "item8 item10 item10";
+    gap: 5px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.grid-item1 {
+    background: #4BB568;
+    grid-area: item1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item2 {
+    background: #4BB568;
+    grid-area: item2;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "timer progress WPM";
+    border-radius: var(--main-radius);
+}
+
+.navbar {
+    grid-area: navbar;
+    background: #979e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.timer {
+    grid-area: timer;
+    background: #75e60b;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding); 
+}
+
+.progressbar {
+    grid-area: progress;
+    background: #689e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.WPM {
+    grid-area: WPM;
+    background: #75e60b;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);    
+}
+
+
+.grid-item3 {
+    background: #4BB568;
+    grid-area: item3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item4 {
+    background: #4BB568;
+    grid-area: item4;
+    display: grid;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
+    gap: 10px;
+    grid-template-areas: 
+    "Score"
+    "Error"
+    "infoWPM"
+    "CPM";
+    border-radius: var(--main-radius);
+}
+
+.Score {
+    grid-area: Score;
+    background: #979e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.Error {
+    grid-area: Error;
+    background: #979e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.infoWPM {
+    grid-area: infoWPM;
+    background: #979e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.CPM {
+    grid-area: CPM;
+    background: #979e35;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.grid-item5 {
+    background: #4BB568;
+    grid-area: item5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item6 {
+    background: #4BB568;
+    grid-area: item6;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item7 {
+    background: #4BB568;
+    grid-area: item7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item8 {
+    background: #4BB568;
+    grid-area: item8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item9 {
+    background: #4BB568;
+    grid-area: item9;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item10 {
+    background: #4BB568;
+    grid-area: item10;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.grid-item11 {
+    background: #4BB568;
+    grid-area: item11;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width:550px) {
+    .grid-container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.15fr 0.15fr 0.2fr 0.25fr 1.25fr 0.25fr 0.1fr;
+       grid-template-areas:
+       "item1"
+       "item3"
+       "item4"
+       "item2"
+       "item5"
+       "item6"
+       "item8";
+    }
+    .grid-item7 {
+       display: none; 
+    }
+    .grid-item4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+    "Score Error"
+    "infoWPM CPM";
+    }
+    .infoWPM, .CPM {
+        margin-bottom: 6px;
+    }
+}

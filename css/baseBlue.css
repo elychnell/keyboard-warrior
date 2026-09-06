@@ -1,0 +1,684 @@
+body {
+    background-color: #0D0208;
+}
+
+.loginDiv {
+position: absolute;
+top: 130px;
+left: 60px;
+color: #0033cc;
+}
+
+.PageInput {display: none;}
+
+span {
+    color: #0033cc;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+hr {
+border-color: #003B00;
+}
+
+button {
+    background-color: #003B00;
+    border: 1px solid #0033cc;
+    color: #0033cc;
+    padding: 3px;
+    text-align: center;
+    font-size: 23px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 6px;
+    border-radius: 7px;
+}
+
+button:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.button {
+    background-color: #003B00;
+    border: 1px solid #0033cc;
+    color: #0033cc;
+    padding: 3px;
+    text-align: center;
+    font-size: 23px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 6px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.button:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.LoginBox.hover {
+    border-color: #ffffff;
+}
+
+.SettingsBox.hover {
+    border-color: #ffffff;
+}
+
+/* Log in */
+.LoginDim {
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.125);
+    position: absolute;
+    top: 0px;
+}
+
+.LoginBox {
+   width: 700px;
+   height: 550px;
+    border: 2px solid;
+    border-color: #003B00;
+   border-radius: 8px;
+   background-color: #0D0208;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   position: relative;
+   top: 150px;
+}
+
+.LoginDim .LoginBox .LoginCloseBox {
+position: absolute;
+top: 4px;
+right: 6px;
+width: 30px;
+height: 30px;
+border: 2px solid;
+border-color:  #0033cc;
+border-radius: 25px;
+cursor: pointer;
+color: #0033cc;
+}
+
+.LoginDim .LoginBox .LoginClose {
+position: relative;
+left: 6px;
+top: 1px;
+font-size: 25px;
+}
+
+.LoginDim .LoginBox .LoginCloseBox:hover {
+color: #ffffff;
+border-color: #ffffff;   
+}
+
+input[type="text"], textarea {
+  background-color : #2e2c2d!important; 
+}
+.LoginForm {
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+position: relative;
+top: 100px;
+left: 125px;    
+}
+
+.loginForm span {
+color: #0033cc;    
+}
+
+.LoginForm .formInput {
+width: 65%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #0033cc;
+border-radius: 4px;
+box-sizing: border-box;
+color: #0033cc!important;
+background-color: #0D0208!important;
+}
+
+.LoginForm .formSubmit {
+width: 65%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;  
+}
+
+.LoginForm .formSubmit:hover {
+background-color: #45a049;    
+}
+.LoginForm label {
+    font-size: 22px;
+    color: #0033cc;
+}
+
+.LoginForm .RegisterLink {
+    color: green;
+}
+/* Register */
+.RegisterDim {
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.125);
+    position: absolute;
+    top: 0px;
+}
+
+.RegisterBox {
+   width: 700px;
+   height: 800px;
+    border: 2px solid;
+    border-color: #003B00;
+   border-radius: 8px;
+   background-color: #0D0208;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   position: relative;
+   top: 50px;
+}
+
+.RegisterDim .RegisterBox .RegisterCloseBox {
+position: absolute;
+top: 4px;
+right: 6px;
+width: 30px;
+height: 30px;
+border: 2px solid;
+border-color:  #0033cc;
+border-radius: 25px;
+cursor: pointer;
+color: #0033cc;
+}
+
+.RegisterDim .RegisterBox .RegisterClose {
+position: relative;
+left: 6px;
+top: 1px;
+font-size: 25px;
+}
+
+.RegisterDim .RegisterBox .RegisterCloseBox:hover {
+color: #ffffff;
+border-color: #ffffff;   
+}
+
+input[type="text"], textarea {
+  background-color : #2e2c2d!important; 
+}
+.RegisterForm {
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+position: relative;
+top: 100px;
+left: 125px;    
+}
+
+.RegisterForm span {
+color: #0033cc;    
+}
+
+.RegisterForm .formInput {
+width: 65%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #0033cc;
+border-radius: 4px;
+box-sizing: border-box;
+color: #0033cc!important;
+background-color: #0D0208!important;
+}
+
+.RegisterForm .formSubmit {
+width: 65%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;  
+}
+
+.RegisterForm .formSubmit:hover {
+background-color: #45a049;    
+}
+.RegisterForm label {
+    font-size: 22px;
+    color: #0033cc;
+}
+
+/* settings */
+.SettingsDim {
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.125);
+    position: absolute;
+    top: 0px;
+}
+
+.SettingsBox {
+   width: 700px;
+   height: 650px;
+    border: 2px solid;
+    border-color: #003B00;
+   border-radius: 8px;
+   background-color: #0D0208;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   position: relative;
+   top: 150px;
+}
+
+.SettingsDim .SettingsBox .SettingsCloseBox {
+position: absolute;
+top: 4px;
+right: 6px;
+width: 30px;
+height: 30px;
+border: 2px solid;
+border-color:  #0033cc;
+border-radius: 25px;
+cursor: pointer;
+color: #0033cc;
+}
+
+.SettingsDim .SettingsBox .SettingsCloseBox:hover {
+color: #ffffff;
+border-color: #ffffff;
+}
+
+.SettingsDim .SettingsBox .SettingsClose {
+position: relative;
+left: 6px;
+top: 1px;
+font-size: 25px;
+}
+
+.SettingsForm {
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+position: relative;
+top: 25px;
+left: 125px;    
+}
+
+.SettingsForm span {
+color: #0033cc;    
+}
+
+.SettingsForm .formInput {
+width: 65%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #0033cc;
+border-radius: 4px;
+box-sizing: border-box;
+color: #0033cc!important;
+background-color: #0D0208!important;
+}
+
+.SettingsForm .formSubmit {
+width: 65%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;  
+}
+
+.SettingsForm .formSubmit:hover {
+background-color: #45a049;    
+}
+
+.SettingsForm label {
+    font-size: 22px;
+    color: #0033cc;
+}
+
+.pageContent {
+text-align: none;
+}
+
+.LogoLeft {
+    position: relative;
+    display: inline-block;
+    top: 15px;
+    left: 0px;
+    margin: 0px;
+    width: 500px;
+    height: 70px;
+    background-color: #0D0208;
+}
+
+.LogoMiddle {
+    position: relative;
+    display: inline-block;
+    bottom: 22px;
+    width: 620px;
+    height: 90px;
+    border: 2px solid #003B00;
+    border-radius: 2px;
+    background-color: #0D0208;
+    text-align: center;
+    }
+
+.MenuLeft {
+position: absolute;
+display: inline-block;
+top: 235px;
+left: 50px;
+margin: 0px;
+width: 145px;
+height: 300px;
+border: 2px solid #003B00;
+border-radius: 2px;
+background-color: #0D0208;
+text-align: center;
+}
+
+.topHR {
+border: 2px solid #003B00;
+border-radius: 3px;
+width: 95%;
+position: relative;
+bottom: 15px;
+}
+
+.AdBoardRightTop {
+position: absolute;
+display: inline-block;
+top: 15px;
+right: 20px;
+width: 728px;
+height: 90px;
+border: 2px solid #003B00;
+border-radius: 2px;
+}
+
+.AdBoardRight {
+position: absolute;
+display: inline-block;
+top: 135px;
+right: 50px;
+width: 160px;
+height: 600px;
+border: 2px solid #003B00;
+border-radius: 2px;
+}
+
+.Content {
+position: relative;
+display: inline-block;
+margin-top: 5px;
+margin-left: 13%;
+margin-right: 13%;
+text-align: center;
+bottom: 30px;
+    }
+
+.text-view {
+border: 2px solid #003B00;
+border-radius: 2px;
+position: relative;
+display: inline-block;
+top: 0px;
+width: 100%;
+}
+
+.scoredisplay {
+left: 55px;
+position: relative;
+display: inline-block;
+background-color: #0D0208;
+width: 370px;
+height: 75px;
+border: 1px solid #003B00;
+border-radius: 6px;
+margin-top: 5px;
+}
+
+.playerName {
+left: 95px;
+top: -27px;
+position: relative;
+display: inline-block;
+padding: 0px;
+width: 135px;
+height: 30px
+}
+
+.scorefield {
+left: -140px;
+top: 10px;
+position: relative;
+display: inline-block;
+padding: 0px;
+width: 90px;
+height: 60px;
+}
+
+.wrongfield {
+left: 0px;
+top: 10px;
+position: relative;
+display: inline-block;
+padding: 0px;
+width: 90px;
+height: 60px;
+}
+
+.WPMfield {
+right: 195px;
+top: 5px;
+position: relative;
+display: inline-block;
+padding: 0px;
+font-size: 25px;
+width: 117px;
+height: 30px;
+}
+
+.WPMfield #WPM {
+font-size: inherit;
+}
+
+.specialChar {
+position: relative;
+display: inline-block;
+width: 15px;
+}
+
+.WrongSpace {
+stroke: red;
+fill: none;
+stroke-width: 2px;
+}
+
+.Timer {
+position: absolute;
+display: inline-block;
+top: 5px;
+left: 100px;
+width: 150px;
+height: 35px;
+}
+
+.Timer span {font-size: 30px;}
+
+/* ProgressBars */
+.ProgressBarSection {
+position: relative;
+display: inline-block;
+top: 0px;
+left: 0%;
+width: 700px;
+height: auto;
+text-align: center;
+border: 1px solid #003B00;
+padding-bottom: 3px;
+padding-top: 8px;
+padding-left: 12px;
+padding-right: 12px;
+margin-bottom: 3px;
+}
+
+
+.P1BarCont, .P2BarCont, .P3BarCont, .P4BarCont  {
+width: 100%;
+margin-bottom: 6px;
+background-color: grey;
+border: 1px solid white;
+}
+
+.BarName {
+position: absolute;
+display: inline-block;
+left: 45%;
+color: white;
+font-size: 22px; 
+}
+
+#BarP1Name {
+top: 18%;
+}
+
+.P1ProgressBar {
+width: 1%;
+height: 25px;    
+background-color: green;
+}
+
+.main-text-field {
+position: relative;
+display: inline-block;
+top: 0px;
+left: 0%;
+height: 425px;
+text-align: center;
+}
+
+.main-text-field .ltrcontainer {
+display: inline-block;
+top: auto;
+bottom: auto;
+left: auto;
+right: auto;
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 110px;
+padding-right: 110px;
+font-size: 35px;
+}
+
+#infoMsg {
+color: #0033cc;
+font-size: 30px;
+font-family: sans-serif;
+}
+
+.input-blink {
+background:#00FF41;
+color: #0D0208;
+}
+
+.wrong {
+color: red;
+}
+
+.input-div {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 0em;
+height: 1em;
+overflow: hidden;
+}
+
+.input-field {
+display: block;
+margin: 0px;
+padding: 0px;
+width: 1em;
+height: 1em;
+font-size: 1em;
+line-height: 1em;
+border: none;
+outline: none;
+}
+
+.input-field1 {
+background: #003B00;
+background-color: #003B00!important;
+left: 40px;
+width: 200px;
+height: 25px;
+top: 20px;
+position: relative;
+display: block;
+background-image: none !important;
+color: #0033cc!important;
+}
+
+/* KEYBOARD GRAPHICS */
+
+.FullKeyboard {
+width: 1300px;
+fill: none;
+stroke: #0033cc;
+stroke-width: 2;
+padding-top: 15px;
+position: relative;
+display: inline-block;
+margin: 0 auto;
+}
+
+.KeyboardKey {
+fill: none;
+stroke-width:2;
+stroke:#0033cc;
+}
+
+.KeyboardSymbol {
+fill:#0033cc;
+font-size: 15px;
+stroke: none;
+}
+.KeyboardZones {
+fill: rgb(3, 104, 14);
+opacity: 0.5;
+}
+
+.KeyboardKey.pressed {
+fill:#0033cc;
+stroke:#ffffff; 
+}
+
+.KeyboardKey.pressed .KeyboardSymbol {
+fill:#ffffff;
+}

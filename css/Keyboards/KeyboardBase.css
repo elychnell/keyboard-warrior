@@ -1,0 +1,110 @@
+
+body {
+  background-color: black;
+}
+
+/* KEYBOARD GRAPHICS */
+
+.FullKeyboard {
+    height: 314px;
+    fill: none;
+    stroke: #008F11;
+    stroke-width: 2;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.KeyboardKey {
+fill: none;
+stroke-width:2;
+stroke:#008F11;
+animation: none;
+}
+
+.KeyboardKey.Active {
+fill:#008F11;
+stroke-width:2;
+stroke:#ffffff;
+stroke-dasharray:1.3;
+animation: none;
+}
+
+.KeyboardKey.NextKey {
+fill:none;
+stroke-width:2;
+stroke:#adc493;
+stroke-dasharray:1.3;    
+animation: none;
+}
+.KeyboardSymbol {
+fill:#008F11;
+font-size: 15px;
+stroke: none;    
+}
+
+.KeyboardZones {
+fill: rgb(3, 104, 14);
+opacity: 0.5;
+}
+
+.FingerMark.pressed {
+opacity: 0!important;
+}
+
+.KeyboardKey.pressed {
+fill:#008F11;
+stroke:#ffffff;
+animation: none;
+}
+
+.KeyboardKey.pressed .KeyboardSymbol {
+fill:#ffffff;
+}
+
+.KeyboardKey.Active .KeyboardSymbol {
+fill:#ffffff;
+}
+
+.KeyboardKey.NextKey .KeyboardSymbol {
+fill:#adc493;
+}
+
+.keyboardButtonFade {
+fill:#eb0000;
+stroke:#ffffff;
+opacity: 0;
+}
+
+.keyboardButtonFade.fade {
+animation: fadeOut ease 750ms;
+-webkit-animation: fadeOut ease 750ms;
+-moz-animation: fadeOut ease 750ms;
+-o-animation: fadeOut ease 750ms;
+-ms-animation: fadeOut ease 750ms;    
+}
+
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-o-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-ms-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
