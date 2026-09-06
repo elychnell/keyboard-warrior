@@ -6,7 +6,7 @@ This repository is preserved as a legacy version of the project and represents t
 
 ## About the Project
 
-Keyboard Warrior is a typing game where players improve their typing speed and accuracy by completing typing challenges.
+Keyboard Warrior is a typing game where players improve their typing speed and accuracy through different typing challenges.
 
 The original application grew beyond the basic typing functionality and included user accounts, social features and multiplayer game modes.
 
@@ -40,11 +40,11 @@ The original application grew beyond the basic typing functionality and included
 
 ## Architecture
 
-The original application uses a traditional server-rendered PHP architecture.
+The original application uses a traditional server-side PHP architecture.
 
-PHP is responsible for handling pages, sessions, database communication and server-side logic, while JavaScript handles much of the interactive typing experience in the browser.
+PHP handles page rendering, sessions, database communication and server-side logic, while JavaScript and jQuery handle much of the interactive typing experience in the browser.
 
-The application also uses JSON files generated from database data for parts of the client-side functionality.
+Parts of the client-side functionality use JSON files generated from database data.
 
 ### Simplified architecture
 
@@ -52,14 +52,15 @@ The application also uses JSON files generated from database data for parts of t
 Browser
    │
    ├── HTML / CSS
-   ├── JavaScript
-   └── jQuery
-         │
-         ▼
-       PHP
-         │
-         ▼
-      MySQL
+   ├── JavaScript / jQuery
+   │
+   └── JSON data
+          ▲
+          │
+        PHP
+          │
+          ▼
+       MySQL
 ```
 
 ## Project Structure
@@ -73,7 +74,8 @@ Browser
 ├── admin.php
 │
 ├── php/
-│   ├── Database and user functionality
+│   ├── Database functionality
+│   ├── User functionality
 │   └── Supporting PHP logic
 │
 ├── js/
@@ -105,19 +107,23 @@ A new version of Keyboard Warrior is planned as a separate project using a moder
 
 The rewrite will use the original application as a functional reference while addressing architectural and maintainability issues found in the legacy implementation.
 
-The goal is to separate frontend, backend and data access responsibilities and introduce a more maintainable structure for features such as authentication, typing games and multiplayer functionality.
+The goal is to separate frontend, backend and data access responsibilities and provide a more maintainable foundation for features such as authentication, typing games and multiplayer functionality.
 
-## Development
+## Development Environment
 
-The original application was developed for a local PHP/MySQL environment.
+The original application was developed and run locally using **XAMPP**, providing the Apache web server, PHP runtime and MySQL-compatible database environment required by the application.
 
-The database configuration expects a local MySQL database named:
+The project was placed in the XAMPP web root and accessed through `localhost`.
+
+The application expects a local database named:
 
 ```text
 wordsdb
 ```
 
-The original application is **not configured for direct deployment from this repository** and should be considered a historical development version.
+Database access is configured in `php/db.php`.
+
+This repository represents the original local development environment and is **not configured for direct deployment to a production server**.
 
 ## Why Keep a Legacy Repository?
 
